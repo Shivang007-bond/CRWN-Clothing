@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import { Fragment, useContext } from "react";
 import "./Navigation.scss";
 
-import ShopCart from "../../components/shopping-cart/Shop-cart";
+import ShopCart from "../../components/shop-cart/Shop-cart";
 import CartDropdown from "../../components/cart-dropdown/Cart-dropdown";
 
 import { ReactComponent as CrwnLogo } from "../../Assets/crown.svg";
