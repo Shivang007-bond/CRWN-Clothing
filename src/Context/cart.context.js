@@ -96,7 +96,7 @@ export const CartProvider = ({ children }) => {
     cartCount,
     removeItemfromCart,
     clearItemfromCart,
-    cartTotal
+    cartTotal,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
