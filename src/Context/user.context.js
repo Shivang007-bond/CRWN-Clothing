@@ -12,6 +12,8 @@ export const UserContext = createContext({
   setCurrentUser: () => null, //empty callback function that just returns null
 });
 
+
+//Reducer 
 export const USER_ACTION_TYPES = {
   SET_CURRENT_USER: "SET_CURRENT_USER",
 };
@@ -38,7 +40,7 @@ const INITIAL_STATE = {
 
 export const UserProvider = ({ children }) => {
   // const [currentUser, setCurrentUser] = useState(null); //user object
-  
+
   const [{ currentUser }, dispatch] = useReducer(userReducer, INITIAL_STATE);
 
   const setCurrentUser = (user) => {
